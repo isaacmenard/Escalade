@@ -1,0 +1,85 @@
+/* CSS Document */
+ .red{background-color: red;}
+ .green{background-color: green;}
+ .yellow{background-color: yellow;}
+ .blue{background-color: blue;}
+
+ .square{
+	width: 20px;
+	height: 20px;
+}
+svg{
+	position: fixed;
+}
+.rond{
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+}
+.stick{
+	position: fixed;
+	background-color: darkslategray;
+}
+
+
+.pointStick{
+	background-color: greenyellow;
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	position:fixed;
+	z-index: 100;
+}
+
+.textPoint{
+	font-size: 9px;
+	position: absolute;
+	left:22px;
+}
+
+.headStick{
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+}
+.bodyStick{
+	width: 5px;
+	height: 90px;
+}
+
+.leftArmStick1{
+	width: 5px;
+	height: 60px;
+}
+.leftArmStick2{
+	width: 5px;
+	height: 60px;
+}
+
+.rightArmStick1{
+	width: 5px;
+	height: 60px;
+}
+.rightArmStick2{
+	width: 5px;
+	height: 60px;
+}
+
+.leftLegStick1{
+	width: 5px;
+	height: 60px;
+}
+.leftLegStick2{
+	width: 5px;
+	height: 60px;
+}
+
+.rightLegStick1{
+	width: 5px;
+	height: 60px;
+}
+.rightLegStick2{
+	width: 5px;
+	height: 60px;
+}
+
