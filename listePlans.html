@@ -6,7 +6,6 @@
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<link rel="stylesheet" href="style.css">
-	<script src="js/script.js"></script>
 </head>
 <body>
 	<nav class="navbar navbar-expand-lg sticky-top navbar-light bg-light">
@@ -42,15 +41,15 @@
 	
 	Plan A : 
 	<img id="mur" src="imagesEscalades/Mur1/slide0.png"/>
-	<a class="carousel-control-prev" onClick="changeSlide('-1')"  role="button" data-slide="prev">
+	<a class="carousel-control-prev" onClick="changeSlide('-1')" id="prev" role="button" data-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
     <span class="sr-only">Previous</span>
   </a>
-  <a class="carousel-control-next" onClick="changeSlide('+1')"   role="button" data-slide="next">
+  <a class="carousel-control-next" onClick="changeSlide('+1')"  id="next" role="button" data-slide="next">
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
     <span class="sr-only">Next</span>
   </a>
 
-	
+		<script src="js/script.js"></script>
 </body>
 </html>

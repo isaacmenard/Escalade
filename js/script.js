@@ -4,7 +4,7 @@ var listeMurs = {
 
 var listeDesMurs = {
   "Mur1": {
-    slide: 7,
+    slide: 6,
     folder: "Mur1"
   },"Mur2": {
     slide: 2,
@@ -16,15 +16,12 @@ var notreMur = listeDesMurs[listeMurs.laListe[0]];
 
 folder = notreMur.folder
 slide = 0
-slideMax = notreMur.slideMax
+slideMax = notreMur.slide
 
-$.ready(function () {
-  refreshPage()
-})
 
 function changeSlide(direction) {
   if (direction == "+1") {
-    if (slide != slideMax) {
+    if (slide < slideMax) {
       slide++
     }
   } else {
@@ -36,5 +33,18 @@ function changeSlide(direction) {
 }
 
 function refreshPage() {
+	if(slide == 0){
+		document.getElementById("prev").style.visibility = "hidden"
+	}else{
+		document.getElementById("prev").style.visibility = "visible"
+	}
+	
+	if(slide == slideMax){
+		document.getElementById("next").style.visibility = "hidden"
+	}else{
+		document.getElementById("next").style.visibility = "visible"
+	}
   document.getElementById("mur").src = "imagesEscalades/" + folder + "/slide" + slide + ".png"
 }
+
+refreshPage()
